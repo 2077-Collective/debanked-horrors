@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Debanked Horrors</title>
+    <style is:global>
+      @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Diphylleia";
+        font-style: normal;
+        font-weight: 400;
+        src: url("./diphylleia-v1-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      }
+
+      .link {
+        @apply text-red-200 hover:text-red-400 transition-colors;
+      }
+    </style>
+  </head>
+  <body class="dark font-serif dark:bg-stone-900 dark:text-white text-xl p-8">
+    <div class="max-w-screen-md mx-auto w-full">
+      <slot />
+    </div>
+  </body>
+</html>

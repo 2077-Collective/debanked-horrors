@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/logo-with-text.svg";
+import Layout from "../layouts/Layout.astro";
+import List from "../components/List.astro";
+import NicCarterTweet from "../../public/tweet.png";
+---
+
+<Layout>
+  <div class="space-y-2">
+    <Image src={Logo} alt="Debanked Horrors" class="w-96" />
+    <p>
+      Governments around the world have been illegally pressuring banks and
+      financial institutions to debank politically unfavored individuals, such
+      as those working in
+      <a href="https://cryptoisuseless.com/" class="link">cryptocurrency</a>.
+    </p>
+    <p>Now, these very people are speaking up.</p>
+    <div class="text-lg">
+      <p>
+        Got a submission? <a href="https://x.com/2077Collective" class="link"
+          >DM us on Twitter</a
+        > or <a href="https://discord.com/invite/2077collective" class="link"
+          >ping our squad in Discord</a
+        >.
+      </p>
+      <p>
+        Unfamiliar with WTF is going on? <a
+          href="https://www.piratewires.com/p/2023-banking-crisis"
+          class="link">Read Nic Carter's article on Pirate Wires</a
+        >.
+      </p>
+      <Image
+        class="mt-2"
+        src={NicCarterTweet}
+        alt=`tech and crypto founders: keep telling your stories of debanking. blot out the sun. don't let the critics pretend it didn't happen. don't let them marginalize you because you're not the "perfect" victim. make it impossible for them to deny.`
+      />
+    </div>
+  </div>
+  <hr class="my-4 border-red-200/20" />
+  <List />
+</Layout>

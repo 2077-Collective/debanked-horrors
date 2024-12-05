@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href="/" />
+    <link rel="me" href="https://twitter.com/2077Collective" />
     <title>Debanked Horrors</title>
     <style is:global>
       @font-face {
@@ -17,6 +19,14 @@
 
       .link {
         @apply text-red-200 hover:text-red-400 transition-colors;
+      }
+
+      .twitter-tweet a {
+        @apply link;
+      }
+
+      .twitter-tweet {
+        @apply dark:bg-stone-800;
       }
     </style>
   </head>

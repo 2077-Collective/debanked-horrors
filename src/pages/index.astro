@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Logo from "../assets/logo-with-text.svg";
 import Layout from "../layouts/Layout.astro";
 import List from "../components/List.astro";
-import NicCarterTweet from "../../public/tweet.png";
+import { Tweet } from "astro-embed";
 ---
 
 <Layout>
@@ -30,12 +30,9 @@ import NicCarterTweet from "../../public/tweet.png";
           class="link">Read Nic Carter's article on Pirate Wires</a
         >.
       </p>
-      <Image
-        class="mt-2"
-        src={NicCarterTweet}
-        alt=`tech and crypto founders: keep telling your stories of debanking. blot out the sun. don't let the critics pretend it didn't happen. don't let them marginalize you because you're not the "perfect" victim. make it impossible for them to deny.`
-      />
     </div>
+    <br />
+    <Tweet id="https://x.com/0xAllen_/status/1862848665301241987" />
   </div>
   <hr class="my-4 border-red-200/20" />
   <List />

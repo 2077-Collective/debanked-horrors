@@ -1,5 +1,7 @@
 ---
 import { Tweet } from "astro-embed";
+import trump_debanked from "../../public/trump-debanked.png";
+import { Image } from "astro:assets";
 ---
 
 <label>
@@ -7,5 +9,15 @@ import { Tweet } from "astro-embed";
   <ol class="space-y-4 text-lg flex flex-col items-center">
     <Tweet id="https://x.com/Austin_Federa/status/1862867514411397189" />
     <Tweet id="https://x.com/tevanrobin/status/1862950008460607898" />
+    <Tweet id="https://x.com/juanaxyz00/status/1862870796168826954" />
+    <Tweet id="https://x.com/davidmarcus/status/1862654506774810641" />
+    <Tweet id="https://x.com/Amplify_Mike/status/1862892883780501568" />
+    <Tweet id="https://x.com/prestonjbyrne/status/1862869066777493862" />
+    <a href="https://www.amazon.com/Melania-Trump-ebook/dp/B0D8R854KP">
+      <Image
+        src={trump_debanked}
+        alt="I was shocked and dismayed to learn that my long-time bank decided to terminate my account and deny my son an opportunity to open a new one."
+      />
+    </a>
   </ol>
 </label>

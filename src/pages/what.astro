@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Logo from "../assets/logo-with-text.svg";
+---
+
+<Layout>
+  <div class="space-y-2">
+    <a href="/">&lt; go back to home</a>
+    <Image src={Logo} alt="Debanked Horrors" class="w-96" />
+    <h1 class="text-3xl">What is happening?</h1>
+    <p>Debanking is what happens when a</p>
+  </div>
+</Layout>
